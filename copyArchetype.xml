@@ -42,9 +42,16 @@
 
     <copy todir="${dst}">
       <fileset dir="${src}">
-        <include name="**/*.js" />
+        <include name="**/js/*" />
+        <include name="**/less/extensions.less" />
+        <include name="**/less/images/*.gif" />
       </fileset>
     </copy>
+    <!--<copy todir="${dst}">-->
+      <!--<fileset dir="${src}">-->
+        <!--<include name="**/less/images/*.gif" />-->
+      <!--</fileset>-->
+    <!--</copy>-->
     
     <!-- process the remaining files -->
     <copy todir="${dst}">

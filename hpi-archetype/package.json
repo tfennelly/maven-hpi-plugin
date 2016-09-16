@@ -27,7 +27,13 @@
     "@jenkins-cd/design-language": "latest",
     "@jenkins-cd/js-extensions": "latest",
     "@jenkins-cd/js-modules": "latest",
+    "@jenkins-cd/sse-gateway": "latest",
     "react": "15.1.0",
     "react-dom": "15.1.0"
+  },
+  "jenkinscd": {
+    "import": [
+      "@jenkins-cd/sse-gateway@any"
+    ]
   }
 }
